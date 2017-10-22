@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bawei.dianshang.Activity.Main2Activity">
+     <FrameLayout
+         android:id="@+id/fragment"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+
+         android:layout_above="@+id/radiogroup"></FrameLayout>
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_1"
+            android:layout_weight="1"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:background="@drawable/selector1"
+            android:layout_height="match_parent" />
+
+        <RadioButton
+            android:id="@+id/rb_2"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/selector2"
+            android:layout_height="wrap_content" />
+
+
+
+        <RadioButton
+            android:id="@+id/rb_3"
+
+            android:background="@drawable/selector3"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rb_4"
+            android:background="@drawable/selector4"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+    </RadioGroup>
+
+</RelativeLayout>

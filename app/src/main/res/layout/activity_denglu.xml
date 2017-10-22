@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bawei.dianshang.Activity.DengluActivity">
+    <ImageView
+        android:id="@+id/image_return"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_back_detail_normal"
+        android:layout_margin="10dp"/>
+    <ImageView
+        android:layout_width="197dp"
+        android:layout_height="154dp"
+        android:src="@drawable/uik_nav_home_selected"
+        android:layout_gravity="center_horizontal"/>
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="请输入用户名"/>
+
+    <EditText
+        android:id="@+id/et_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="请输入密码"
+        android:password="true" />
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+        <CheckBox
+            android:id="@+id/myckeck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记住用户名密码"
+            android:layout_marginLeft="20sp"
+            />
+      <TextView
+           android:id="@+id/xinzhuce"
+           android:clickable="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="新用户注册"
+           android:layout_marginLeft="150sp"
+
+           />
+   </LinearLayout>
+
+
+    <Button
+        android:id="@+id/loging_but"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/but_shape"
+        android:text="登陆"
+        android:textSize="23sp"
+        android:textColor="@color/colorWhite2"/>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_color"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="设置"
+            android:textColor="@color/colorWhite"
+            android:textSize="25sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/bg_color">
+        <ImageView
+            android:id="@+id/dengu"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:clickable="true"
+            android:src="@drawable/uik_avatar_normal"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            />
+        <TextView
+            android:id="@+id/tv_weidenglu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未登录"
+            android:layout_toRightOf="@id/dengu"
+            android:layout_centerVertical="true"
+            android:textSize="23sp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:id="@+id/mylocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_weidenglu"
+            android:layout_toRightOf="@id/dengu"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorWhite3"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_zhuxiao"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:text="注销"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/bg_color"
+        android:padding="10dp"/>
+    <TextView
+        android:id="@+id/mydizhi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:text="我的收货地址"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+    <ImageView
+        android:id="@+id/mainpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/mainpage"/>
+    </LinearLayout>
